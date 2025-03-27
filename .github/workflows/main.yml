@@ -12,6 +12,9 @@ jobs:
   run-unit-tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v46
